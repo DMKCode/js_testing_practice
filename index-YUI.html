@@ -10,7 +10,7 @@
     <script>
         function convertCurrency(amount, rateOfConversion) {
             var toCurrencyAmount = rateOfConversion * amount;
-            toCurrencyAmount = Number.parseFloat(toCurrencyAmount).toFixed(2);
+            toCurrencyAmount = parseFloat(toCurrencyAmount).toFixed(2);
 
             return toCurrencyAmount;
         }
