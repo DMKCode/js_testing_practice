@@ -9,7 +9,9 @@
     <script src="http://yui.yahooapis.com/3.18.1/build/yui/yui-min.js"></script>
     <script>
         function convertCurrency(amount, rateOfConversion) {
-            var toCurrencyAmount = 0;
+            var toCurrencyAmount = rateOfConversion * amount;
+            toCurrencyAmount = Number.parseFloat(toCurrencyAmount).toFixed(2);
+
             return toCurrencyAmount;
         }
         YUI().use('test-console', function (Y) {
@@ -25,6 +27,10 @@
             // This will render a test console in the browser
             // in the container(div here) with id testLogs.
             new Y.Test.Console({
+                filters: {
+                    fail : true,
+                    pass : true
+                },
                 newestOnTop: false,
                 width:"400px",
                 height:"600px"
