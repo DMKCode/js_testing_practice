@@ -4,6 +4,13 @@ describe("stringUtil", function() {
         it("should return the first word of a string", function() {
             expect(stringUtil.firstWord("one two")).toBe("one");
         });
+
+        it("should delegate its logic to nthWord", function() {
+            spyOn(stringUtil, "nthWord");
+            stringUtil.firstWord("one two");
+
+            expect(stringUtil.nthWord).toHaveBeenCalled();
+        });
     });
 
     describe("nthword", function(){
