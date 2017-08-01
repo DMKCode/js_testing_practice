@@ -5,4 +5,11 @@ describe("stringUtil", function() {
             expect(stringUtil.firstWord("one two")).toBe("one");
         });
     });
+
+    describe("nthword", function(){
+        it("should return the nth word of a string", function() {
+            expect(stringUtil.nthWord("one two", 1)).toBe("one");
+            expect(stringUtil.nthWord("one two", 1)).toBe("two");
+        });
+    });
 });
