@@ -1,0 +1,15 @@
+{
+  "name": "js_testing_jasmine",
+  "version": "1.0.0",
+  "description": "",
+  "main": "stringUtil.js",
+  "devDependencies": {
+    "jasmine": "^2.7.0",
+    "jasmine-spec-reporter": "^4.1.1"
+  },
+  "scripts": {
+    "test": "node jasmine-runner.js"
+  },
+  "author": "",
+  "license": "ISC"
+}
