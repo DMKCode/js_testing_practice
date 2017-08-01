@@ -9,7 +9,7 @@ describe("stringUtil", function() {
     describe("nthword", function(){
         it("should return the nth word of a string", function() {
             expect(stringUtil.nthWord("one two", 1)).toBe("one");
-            expect(stringUtil.nthWord("one two", 1)).toBe("two");
+            expect(stringUtil.nthWord("one two", 2)).toBe("two");
         });
     });
 });
