@@ -1,6 +1,7 @@
 var stringUtil = {
-    firstWord: function() {
-        // Not doing anything yet.
+    firstWord: function(text) {
+        var textWords = text.split(" ");
+        return textWords[0];
     }
 };
 
