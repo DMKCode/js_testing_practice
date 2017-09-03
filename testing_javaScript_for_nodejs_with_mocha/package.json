@@ -1,7 +1,7 @@
 {
   "name": "testing_javascript_for_nodejs_with_moch",
   "version": "1.0.0",
-  "description": "",
+  "description": "testing with mocha",
   "main": "index.js",
   "scripts": {
     "test": "mocha './test/**/*.spec.js'"
